@@ -1,0 +1,12 @@
+{
+  "ID":"3D008F00CFD24DAA89A35161D72E8EF7",
+  "ActionKeyword":"v2",
+  "Name":"V2EX",
+  "Description":"V2EX = way to explore",
+  "Author":"wenLiangcan",
+  "Version":"0.0.1",
+  "Language":"python",
+  "Website":"",
+  "IcoPath": "img\\v2ex.png",
+  "ExecuteFileName":"v2ex.py"
+}
