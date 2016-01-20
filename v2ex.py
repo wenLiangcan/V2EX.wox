@@ -14,12 +14,6 @@ LATEST = 'http://www.v2ex.com/api/topics/latest.json'
 HOT = 'http://www.v2ex.com/api/topics/hot.json'
 
 
-def full2half(uc):
-    """Convert full-width characters to half-width characters.
-    """
-    return unicodedata.normalize('NFKC', uc)
-
-
 class Main(Wox):
 
     def query(self, param):
@@ -37,7 +31,7 @@ class Main(Wox):
 
         self.__get_node_img(set([i['img'] for i in news]))
         result = [{
-            'Title': full2half(i['title']),
+            'Title': i['title'],
             'SubTitle': u'{node} • {author} • 回复 {replies}'.format(
                 node=i['node']['title'],
                 author=i['member']['username'],
